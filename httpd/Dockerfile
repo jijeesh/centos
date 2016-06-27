@@ -38,7 +38,7 @@ RUN ln -s /etc/httpd/sites-available/${cname}_$servn.conf /etc/httpd/sites-enabl
 
 
 EXPOSE 80
-EXPOSE 443
+
 
 RUN rm -rf /run/httpd/* /tmp/httpd*
 CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
